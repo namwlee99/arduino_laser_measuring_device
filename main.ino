@@ -41,7 +41,7 @@ void oled(){
       u8g.setFont(u8g_font_unifont);
       u8g.setPrintPos(0,23);
       u8g.drawStr(0,23, "Front Dis: ");
-      u8g.setPrintPos(85,23); //픽셀 단위라 x를 작게 잡아주면 글씨가 겹칩니다.
+      u8g.setPrintPos(85,23);
       u8g.print(distance_front);
       u8g.setPrintPos(110,23);
       u8g.print("CM");
@@ -49,7 +49,7 @@ void oled(){
       u8g.setFont(u8g_font_unifont);
       u8g.setPrintPos(0,38);
       u8g.drawStr(0,38, "Back  Dis: ");
-      u8g.setPrintPos(85,38); //픽셀 단위라 x를 작게 잡아주면 글씨가 겹칩니다.
+      u8g.setPrintPos(85,38);
       u8g.print(distance_back);
       u8g.setPrintPos(110,38);
       u8g.print("CM");
@@ -57,7 +57,7 @@ void oled(){
       u8g.setFont(u8g_font_unifont);
       u8g.setPrintPos(0,53);
       u8g.drawStr(0,53, "Sum   Dis: ");
-      u8g.setPrintPos(85,53); //픽셀 단위라 x를 작게 잡아주면 글씨가 겹칩니다.
+      u8g.setPrintPos(85,53);
       u8g.print(distance_front + distance_back);
       u8g.setPrintPos(110,53);
       u8g.print("CM");
@@ -75,7 +75,7 @@ void oled_front(){
       u8g.setFont(u8g_font_unifont);
       u8g.setPrintPos(0,38);
       u8g.drawStr(0,38, "Front Dis: ");
-      u8g.setPrintPos(85,38); //픽셀 단위라 x를 작게 잡아주면 글씨가 겹칩니다.
+      u8g.setPrintPos(85,38);
       u8g.print(distance_front);
       u8g.setPrintPos(110,38);
       u8g.print("CM");
@@ -93,7 +93,7 @@ void oled_sum(){
       u8g.setFont(u8g_font_unifont);
       u8g.setPrintPos(8,38);
       u8g.drawStr(8,38, "Sum Dis: ");
-      u8g.setPrintPos(78,38); //픽셀 단위라 x를 작게 잡아주면 글씨가 겹칩니다.
+      u8g.setPrintPos(78,38);
       u8g.print(distance_front + distance_back);
       u8g.setPrintPos(103,38);
       u8g.print("CM");
